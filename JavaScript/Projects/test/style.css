@@ -1,0 +1,12 @@
+nav{
+    display: none;
+}
+
+input{
+    display: block;
+}
+
+#toggle:checked + nav{
+    display: block;
+    float: right;
+}

@@ -1,0 +1,147 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/* full page */
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* 1 section */
+
+.header-menu{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+}
+
+
+header li{
+    flex:1;    
+}
+
+header li a{
+    font-size: 30px;
+    font-family: 'Sulphur Point', sans-serif;
+    display: block;
+    border: solid 1px black;
+    padding: 4% 1%;
+    margin: 7% 2px;    
+}
+
+header li a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.slide-show img{    
+    width: 100%;
+    box-shadow: 0 10px 25px 0 rgba(0,0,0,0.45), 0 -5px 25px 0 rgba(0,0,0,0.35);
+
+}
+
+/* 2 section */
+.empty{
+    height: 40vh;
+    background: url("../images/logo.png") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+/* 3 section */
+.portofolio{
+    background-color: white;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 -10px 25px 0 rgba(0,0,0,0.45);
+}
+
+
+.portofolio-row {
+    display: flex;
+}
+
+.portofolio-row img{
+    display: block;
+    width: 24%;
+    margin: 2px;
+    flex: 1;
+}
+
+footer ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+footer li a{
+    display: block;
+    margin: 0 5px;    
+    font-family: 'Sulphur Point', sans-serif;
+    border: solid 1px black;
+    padding: 5px;
+}
+
+footer li a:hover{
+    background-color: black;
+    color: white;
+}
+
+.arrow{
+    display: none;
+}
+
+/* not working */
+@media only screen and (max-width: 600px) {
+    .top{
+        background-color: white ;
+    }
+    
+    .header-menu{
+        flex-direction: column;
+    }
+    
+    header li a{
+        padding: 4% 1%;
+        margin: 1% 3px;    
+    }
+
+    .slide-show{
+        margin-top: 10px;
+    }
+    
+    .portofolio-row {
+        flex-direction: column;
+    }
+    .portofolio-row img{
+        width: 90%;
+        margin: 0 auto 3% auto;
+    }
+
+    .empty{
+    height: 25vh;
+    }
+
+    
+
+    footer ul{
+        display: none;
+    }
+
+    .arrow{
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* full page */
+.screen-size{
+    height: 100vh;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+
+.presentation, .image{
+    flex:1;
+}
+
+
+/* left side */
+.presentation{
+    background-color: black;
+    color: white;
+}
+
+.name{
+    text-align: center;
+    margin: 10vh 0 10vh 0;
+    font-size: 14px;
+}
+
+.thin{
+    font-weight: 100;
+    margin-left: 5px;
+}
+
+.proffesion{
+    text-align: center;
+    margin: 10vh 0 10vh 0;
+    font-size: 35px;
+}
+
+.proffesion h2{
+    margin: 10px;
+}
+
+.description{
+    text-align: center;
+    width: 70%;
+    display: block;
+    margin: 0 auto 5vh auto;
+}
+
+.buttons{
+    text-align: center;
+}
+
+.my-work a:link{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.my-work a:hover{
+    background-color: white;
+    color: black;
+}
+
+.social-media{
+    position: absolute;
+    width: 50%;
+    bottom: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram{
+    margin-right: 10px;
+}
+
+.instagram:hover{
+    transform: scale(1.1);
+}
+
+.facebook:hover{
+    transform: scale(1.1);
+}
+
+/* right side */
+
+.img-mobile{
+    display: none;
+}
+
+.image img{
+    width: 100%;
+    margin-top: 10%;
+}
+
+
+/* mobile response */
+
+@media only screen and (max-width:600px){
+.screen-size{
+    flex-direction: column-reverse;
+    overflow: auto;
+}
+.presentation{
+    width: 100%;
+}
+
+.buttons{
+    margin-bottom: 20px;
+}
+
+.social-media{
+    position: static;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image{
+    background-color: black;
+}
+
+.image img{
+    margin: 0;
+} 
+
+.img-mobile{
+    display: inline;
+}
+
+.img-full{
+    display: none;
+}
+
+}

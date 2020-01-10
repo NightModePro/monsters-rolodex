@@ -1,0 +1,62 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+/* top */
+
+.hamburger{
+    float: right;
+}
+
+nav{
+    display: flex;
+    text-align: center;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    flex-grow: 1;
+    text-decoration: none;
+    color: black;
+    border: 1px black solid;
+    margin: 2px;
+    padding: 1.7vh;
+    font-size: 1.9rem;
+}
+
+nav a:hover{
+    color: white;
+    background-color: black;
+}
+
+.slide{
+    overflow: hidden;
+}
+
+#slide-img{
+    width: 100%;
+}
+
+/* empty */
+.empty{
+    height: 40vh;
+    background: url('../images/icons/logo.png') no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* portofolio */
+.portofolio-row{
+    display: flex;
+}
+
+.portofolio-row img{
+    margin:2px;
+    width: 24%;
+    display: block;
+    flex-grow: 1;
+}

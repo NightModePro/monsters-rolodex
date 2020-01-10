@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/***********************
+******** HEADER ********
+***********************/
+
+header{
+    height: 200px;
+    background-color: lawngreen;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 5px 20px 0px rgba(117, 117, 117, 0.5);
+    
+}
+
+header h1{
+    font-size: 80px;
+    padding-top: 50px;
+}
+
+
+
+
+/************************
+******** WRAPPER ********
+************************/
+.wrapper{
+    background-color: white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/**********************
+******** STORE ********
+**********************/
+.store{    
+    border: 3px solid black;
+    width: 60%;
+    float: left;
+}
+
+/* .store-title{
+    
+} */
+
+.all-products{
+    height: 358px;
+    overflow: auto;    
+}
+
+.product{
+    background: lightseagreen;
+    margin: 2px;
+}
+
+
+
+/*********************
+******** CART ********
+*********************/
+.cart{
+    border: 3px solid black;
+    margin-bottom: 2px;
+    width: 38%;
+    float: right;
+}
+
+.all-cart-items{
+    height: 300px;
+    overflow: auto;
+}
+
+.cart-item{
+    background:lightslategrey;
+    margin: 2px;
+    padding: 20px;
+}
+
+
+/************************
+******** HISTORY ********
+************************/
+.receipe{
+    border: 3px solid black;
+    clear: both;
+}
+
+.all-receipes{
+    height: 200px;
+    overflow: auto;
+}
+
+.receipe{
+    background: magenta;
+    margin: 2px;
+    padding: 20px;
+}
+
+
+
+/***********************
+******** FOOTER ********
+***********************/
+
+footer{
+    height: 70px;
+    background-color: lawngreen;
+}
+
+footer p {
+    font-size: 25px;
+    color: rgb(95, 95, 95);
+    font-weight: 100;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/*   */
+.title{
+    text-align: center;
+}

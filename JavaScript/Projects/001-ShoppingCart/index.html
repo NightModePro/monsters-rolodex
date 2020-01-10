@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <!-- <script src="scripts/app.js" async></script> -->
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <header>
+        <h1>Vegetables</h1>
+    </header>
+    <div class="wrapper">
+        <!--
+        ***************************************************************************************************
+        *************** STORE ***************
+        ***************************************************************************************************
+     -->
+        <div class="store" id="store">
+            <div class="store-title title">
+                <h1>Store</h1>
+            </div>
+            <div class="all-products" id="all-products">
+                <div class="product-1 product">
+                    <h1 class="product-name">Product 1 Name ceva</h1>
+                    <img src="images/product-icon.png" alt="product-1 name" height="80" width="120">
+                    <div class="product-description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laboriosam at quos, vitae
+                            exercitationem veritatis facere aliquam maiores! Ad, eos!</p>
+                    </div>
+                    <div class="stock">
+                        <p>Stock: </p>
+                        <p class="quant">20</p>
+                    </div>
+                    <div class="product-price">
+                        <p>Price: </p>
+                        <p class="price-value">10</p>
+                        <p class="unit">$</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <input type="number" class="add-product-quantity" placeholder="how much">
+                        <button class="add-to-cart-btn" id="btn-product-1">Add To Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="product-1 product">
+                    <h1 class="product-name">Product 2 Name</h1>
+                    <img src="images/product-icon.png" alt="product-1 name" height="80" width="120">
+                    <div class="product-description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laboriosam at quos, vitae
+                            exercitationem veritatis facere aliquam maiores! Ad, eos!</p>
+                    </div>
+                    <div class="stock">
+                        <p>Stock: </p>
+                        <p class="quant">20</p>
+                    </div>
+                    <div class="product-price">
+                        <p>Price: </p>
+                        <p class="price-value">10</p>
+                        <p class="unit">$</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <input type="number" class="add-product-quantity" placeholder="how much">
+                        <button class="add-to-cart-btn" id="btn-product-2">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-1 product">
+                    <h1 class="product-name">Product 3 Name</h1>
+                    <img src="images/product-icon.png" alt="product-1 name" height="80" width="120">
+                    <div class="product-description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laboriosam at quos, vitae
+                            exercitationem veritatis facere aliquam maiores! Ad, eos!</p>
+                    </div>
+                    <div class="stock">
+                        <p>Stock: </p>
+                        <p class="quant">20</p>
+                    </div>
+                    <div class="product-price">
+                        <p>Price: </p>
+                        <p class="price-value">10</p>
+                        <p class="product-currency">$</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <input type="number" class="add-product-quantity" placeholder="how much">
+                        <button class="add-to-cart-btn" id="btn-product-3">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+        ***************************************************************************************************
+        *************** CART ***************
+        ***************************************************************************************************
+     -->
+        <div class="cart" id="cart">
+            <div class="cart-title title">
+                <h1>Cart</h1>
+            </div>
+
+            <div class="all-cart-items">
+                <div class="cart-item">
+                    <p class="cart-index">1</p>
+                    <p class="cart-prod-name">Box</p>
+                    <p class="cart-product-price">10</p>
+                    <p class="cart-currency">$$</p>
+                    <input type="number" class="cart-quantity" value="50">
+                    <button class="delete">Delete</button>
+                </div>
+
+                <div class="cart-item">
+                    <p class="cart-index">1</p>
+                    <p class="cart-prod-name">Box</p>
+                    <p class="cart-product-price">10</p>
+                    <p class="cart-currency">$$</p>
+                    <input type="number" class="cart-quantity" value="10">
+                    <button class="delete">Delete</button>
+                </div>
+
+                <div class="cart-item">
+                    <p class="cart-index">1</p>
+                    <p class="cart-prod-name">Box</p>
+                    <p class="cart-product-price">10</p>
+                    <p class="cart-currency">$$</p>
+                    <input type="number" class="cart-quantity" value="10">
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
+            <p class="cart-total">Total: </p>
+            <p class="cart-total-price">100$</p>
+            <button class="buy-now-btn">Buy Now!</button>
+        </div>
+
+
+
+
+        <!--
+        ***************************************************************************************************
+        *************** HOSTORY ***************
+        ***************************************************************************************************
+     -->
+        <div class="receipe">
+            <div class="hostory-title title">
+                <h1>History</h1>
+            </div>
+
+            <div class="all-receipes">
+                <div class="receipe-1 receipe">
+                    <div class="receipe-index">1</div>
+                    <div class="receipte-product">
+                        <p class="receipe-product-name">Box</p>
+                        <p class="receipe-product-price">10 $$</p>
+                        <p class="receipe-product-quantity">3</p>
+                    </div>
+                    <div class="receipte-product">
+                        <p class="receipe-product-name">Box</p>
+                        <p class="receipe-product-price">10 $$</p>
+                        <p class="receipe-product-quantity">3</p>
+                    </div>
+                    <div class="receipe-value">100 $$</div>
+                </div>
+
+                <div class="receipe-1 receipe">
+                    <div class="receipe-index">1</div>
+                    <div class="receipte-product">
+                        <p class="receipe-product-name">Box</p>
+                        <p class="receipe-product-price">10 $$</p>
+                        <p class="receipe-product-quantity">3</p>
+                    </div>
+                    <div class="receipte-product">
+                        <p class="receipe-product-name">Box</p>
+                        <p class="receipe-product-price">10 $$</p>
+                        <p class="receipe-product-quantity">3</p>
+                    </div>
+                    <div class="receipe-value">100 $$</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>footer</p>
+    </footer>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>

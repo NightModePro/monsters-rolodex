@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/****************************************************************************************************************************
+************************************ Header *********************************************************************************
+****************************************************************************************************************************/
+header{
+    height: 100px;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+header h1{
+    font-size: 50px;
+}
+
+
+
+/****************************************************************************************************************************
+************************************ Content ********************************************************************************
+****************************************************************************************************************************/
+
+
+/* ******************************************* wrapper ******************************************* */
+.wrapper{
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+}
+
+.display-width{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-section{
+    display: flex;
+    }
+
+/* .border{
+    border: 1px solid black;
+    padding: 10px;
+} */
+
+.category{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
+/* ******************************************* store ******************************************* */
+.store{
+    margin: 2px;
+    padding: 10px;
+    border: 2px solid black;
+    width: 65%;
+    }
+
+.store-products{
+    height: 450px;
+    overflow: auto;
+}
+
+.store-product{
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.store-product-description{
+    width: 250px;
+}
+
+.store-product-presentation{
+    width: 100%;
+    display: flex;
+}
+
+
+
+.store-product-img{
+    width: 20%;
+}
+
+.store-product-description{
+    width: 70%;
+    vertical-align: middle;
+    line-height: normal;
+    display: inline-block;
+    margin-left: 10px;
+    padding-top: 25px;
+}
+
+.store-product-action{
+    display:flex;
+}
+
+.store-product-stock{
+    display: flex;
+    margin-left: 100px;
+}
+
+.store-product-price-display{
+    display: flex;
+    margin-left: 10px;
+
+}
+
+
+.store-product input{
+    width: 30px;
+    margin-left: 15px;
+}
+
+
+
+
+
+/* ******************************************* cart ******************************************* */
+.cart{
+    margin: 2px;
+    padding: 10px;
+    border: 2px solid black;
+    width: 35%;
+}
+
+.cart-products{
+    height: 450px;
+    overflow: auto;
+}
+
+.cart-product{
+    display: block;
+    background-color: lightpink;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.cart-product input{
+    width: 50px;
+}
+
+.cart-product-img{
+    width: 50px;
+}
+
+.cart-product-name{
+    width: 125px;
+}
+
+.cart-product-display{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.cart-product-price{
+    display: none;
+}
+
+
+.cart-total{
+    margin-top: 10px;
+}
+
+/* ******************************************* hostory ******************************************* */
+.receipes{
+    margin: 2px;
+    padding: 10px;
+    border: 2px solid black;
+    height: 200px;
+    overflow: auto;
+}
+
+.receipe-product{
+    display: flex;
+    flex: 10px;
+}
+
+.receipe{
+    margin-bottom: 10px;
+    background-color: lightsteelblue;
+    padding: 10px;
+}
+
+table{
+    width: 500px;
+    text-align: left;
+}
+
+
+/****************************************************************************************************************************
+************************************ Footer *********************************************************************************
+****************************************************************************************************************************/
+footer{
+    height: 70px;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+footer h5{
+    font-size: 25px;
+    color: rgb(97, 92, 92);
+    text-shadow: 0px 0px 3px #cf6161, 0px 0px 8px #6c61cf;
+}

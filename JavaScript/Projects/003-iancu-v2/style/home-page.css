@@ -1,0 +1,131 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/* full page / more than 1 element */
+.wrapper{
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+
+.size{
+    width: 50%;
+    height: 100vh;
+}
+
+/* left sife */
+
+.text{
+    background-color: black;
+    color: rgb(240, 240, 240);
+    text-align: center;
+}
+
+#name{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 4rem 0;
+}
+
+#name-thin{
+    font-weight: lighter;
+}
+
+#moto{
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding: 3rem 0;
+}
+
+#description{
+    font-weight: normal;
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 0 5rem 0;
+}
+
+#my-work{
+    text-decoration: none;
+    display: block;
+    width: 90px;
+    margin: 0 auto;
+    color: white;
+    border: 1px white solid;
+    padding: 10px;
+}
+
+#my-work:hover{
+    color: black;
+    background-color: white;
+}
+
+#my-work a:visited{
+    color: white;
+}
+
+#my-work a:active{
+    color:white;
+}
+
+.social-media{
+    position: absolute;
+    width: 50%;
+    bottom: 2vh;
+}
+
+.social-media img:hover{
+    transform: scale(1.1);
+}
+
+/* right side */
+
+.image img{
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.mobile-img{
+    display: none;
+}
+
+
+@media only screen and (max-width:600px){
+    .wrapper{
+        flex-direction: column-reverse;
+        overflow: auto;
+    }
+
+    .size{
+        width: 100%;
+    }
+
+    #name{
+        padding: 3rem 0 0 0;
+    }
+
+    .social-media{
+        width: 100%;
+    }
+
+    .image{
+        height: 1000%;
+    }
+
+    .image img{
+        margin-top: 0;
+    }
+
+    .desktop-img{
+        display: none;
+    }
+
+    .mobile-img{
+        display: block;
+    }
+
+
+}
