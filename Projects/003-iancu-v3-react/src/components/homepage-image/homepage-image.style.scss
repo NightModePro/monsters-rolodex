@@ -1,0 +1,35 @@
+.size{
+    height: 100vh;
+    width: 50%;
+}
+
+.image img{
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.mobile-img{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    .size{
+        width: 100%;
+    }
+    
+    .image{
+        height: 1000%;
+    }
+
+    .image img{
+        margin-top: 0;
+    }
+
+    .desktop-img{
+        display: none;
+    }
+
+    .mobile-img{
+        display: block;
+    }
+}

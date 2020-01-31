@@ -1,0 +1,9 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+
+    &:first-child{
+        padding: 50px 0 0 0 ;
+    }
+}

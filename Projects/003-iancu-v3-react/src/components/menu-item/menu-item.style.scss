@@ -1,0 +1,15 @@
+.a{
+    display: block;
+    flex-grow: 1;
+    text-decoration: none;
+    color: black;
+    border: 1px black solid;
+    margin: 2px;
+    padding: 1.7vh;
+    font-size: 1.9rem;
+
+    &:hover{
+        color: white;
+        background-color: black;
+    }
+}

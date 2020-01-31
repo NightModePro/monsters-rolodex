@@ -1,0 +1,220 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+/* menu */
+
+.menu{
+    margin: 2vh 0;
+}
+
+.hamburger, input{
+    display: none;
+}
+
+nav{
+    display: flex;
+    text-align: center;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    flex-grow: 1;
+    text-decoration: none;
+    color: black;
+    border: 1px black solid;
+    margin: 2px;
+    padding: 1.7vh 0;
+    width: 25%;
+    font-size: 1.9rem;
+    transition-duration: 300ms;
+}
+
+nav a:hover{
+    color: white;
+    background-color: black;
+    transition-duration: 300ms;
+}
+
+
+/* slider */
+.slider{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 11px 22px 5px rgba(166,166,166,1);
+    -moz-box-shadow: 0px 11px 22px 5px rgba(166,166,166,1);
+    box-shadow: 0px 11px 22px 5px rgba(166,166,166,1);
+}
+
+
+
+.slider a{
+    text-decoration: none;
+    color: sandybrown;
+}
+
+.slider > img{
+    width: 100%;
+    z-index: -1;
+    transition-duration: 2000ms;
+}
+
+.slider:hover > img{
+    transform: scale(1.1);
+    transition-duration: 6000ms;
+}
+
+.left, .center, .right{
+    position: absolute;
+    background-color: rebeccapurple;
+    opacity: 0;
+    transition-duration: 1000ms;
+}
+
+/* make the navigations on slider 0.3 visible when it goes with mouse over image */
+/* aparently I can;t bine bine all 3 in just on selector */
+.slider:hover > .left{
+    cursor: pointer;
+    opacity: 0.3;
+    transition-duration: 1000ms;
+}
+.slider:hover > .center{
+    cursor: pointer;
+    opacity: 0.3;
+    transition-duration: 1000ms;
+}
+.slider:hover > .right{
+    cursor: pointer;
+    opacity: 0.3;
+    transition-duration: 1000ms;
+}
+
+
+/* make navigation visible 0.8 when cursor above */
+.slider .left:hover{
+    opacity: 0.8;
+    transition-duration: 1000ms;
+}
+.slider .right:hover{
+    opacity: 0.8;
+    transition-duration: 1000ms;
+}
+.slider .center:hover{
+    opacity: 0.8;
+    transition-duration: 1000ms;
+}
+
+
+
+
+.left{
+    left:0;
+    top:0;
+    width: 15%;
+    height: 55%;
+    text-align: center;
+    padding: 30% 0 0 0;
+}
+
+.right{
+    right:0;
+    top:0;
+    width: 15%;
+    height: 55%;
+    text-align: center;
+    padding: 30% 0 0 0;
+}
+
+.center{
+    top:50%;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+/* empty */
+.empty{
+    height: 40vh;
+    background: url('../images/icons/logo.png') no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* portofolio */
+.portofolio{
+    padding: 2vh 0;
+    -webkit-box-shadow: 0px -11px 22px 5px rgba(166,166,166,1);
+    -moz-box-shadow: 0px -11px 22px 5px rgba(166,166,166,1);
+    box-shadow: 0px -11px 22px 5px rgba(166,166,166,1);
+}
+
+.portofolio h1{
+    text-align: center;
+    font-family: 'Tangerine', cursive; 
+    font-weight: 100; 
+    font-size: 5rem;
+}
+
+.portofolio-row{
+    display: flex;
+}
+
+.portofolio-row img{
+    margin:2px;
+    width: 24%;
+    display: block;
+    flex-grow: 1;
+}
+
+/* footer */
+footer{
+    height: 4vh;
+}
+
+
+@media only screen and (max-width:600px){
+    nav{
+        flex-direction: column;
+        display: none;
+    }
+    
+    nav a{
+        width: 99%;
+        margin: 3px auto;
+    }
+
+    .hamburger{
+        display: block;
+        font-size: 3rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    #toggle:checked + nav{
+    display: flex;
+    }
+
+    .portofolio-row{
+        flex-direction: column;
+    }
+
+    .portofolio-row img{
+        width: 98%;
+        margin: 4px auto;
+    }
+    
+    .left, .center, .right{
+        opacity: 0.3;
+    }
+}

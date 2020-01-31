@@ -1,0 +1,13 @@
+.header{
+    border: 1px black solid;
+    padding: 20px;
+    // width: 100%;
+    // position: fixed;
+}
+
+.homepage-content{
+    width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 192px 576px 192px;
+}

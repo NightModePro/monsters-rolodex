@@ -1,0 +1,90 @@
+.text{
+    height: 100vh;
+    width: 50%;
+    background-color: black;
+    color: rgb(240, 240, 240);
+    text-align: center;
+}
+                            
+#name{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2.2rem;
+    padding: 4rem 0;
+}
+
+#name-thin{
+    font-weight: lighter;
+}
+
+#moto{
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding: 3rem 0;
+}
+
+#description{
+    font-weight: normal;
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 0 5rem 0;
+}
+
+#my-work{
+    text-decoration: none;
+    display: block;
+    width: 90px;
+    margin: 0 auto;
+    color: white;
+    border: 1px white solid;
+    padding: 10px;
+}
+
+#my-work:hover{
+    color: black;
+    background-color: white;
+}
+
+#my-work a:visited{
+    color: white;
+}
+
+#my-work a:active{
+    color:white;
+}
+
+.social-media{
+    position: absolute;
+    width: 50%;
+    bottom: 2vh;
+}
+
+.social-media img:hover{
+    transform: scale(1.1);
+}
+
+
+
+@media only screen and (max-width:600px){
+    .wrapper{
+        flex-direction: column-reverse;
+        overflow: auto;
+    }
+
+    .size{
+        width: 100%;
+    }
+
+    #name{
+        padding: 3rem 0 0 0;
+    }
+
+    .social-media{
+        width: 100%;
+    }
+
+    #my-work{
+        margin-top: 5vh;
+    }
+}

@@ -1,0 +1,10 @@
+.homepage{
+    display: flex;
+}
+
+@media only screen and (max-width:600px){
+    .homepage{
+        flex-direction: column-reverse;
+        overflow: auto;
+    }
+}

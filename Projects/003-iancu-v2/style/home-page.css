@@ -1,0 +1,210 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/* full page / more than 1 element */
+.wrapper{
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.size{
+    width: 50%;
+    height: 100vh;
+}
+
+/* left sife */
+
+.text{
+    background-color: black;
+    color: rgb(240, 240, 240);
+    text-align: center;
+    z-index: -1;
+}
+
+#name{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 4rem 0;
+}
+
+#name-thin{
+    font-weight: lighter;
+}
+
+#moto{
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding: 3rem 0;
+}
+
+#description{
+    font-weight: normal;
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 0 5rem 0;
+}
+
+#my-work{
+    text-decoration: none;
+    display: block;
+    width: 90px;
+    margin: 0 auto;
+    color: white;
+    border: 1px white solid;
+    padding: 10px;
+}
+
+#my-work:hover{
+    color: black;
+    background-color: white;
+}
+
+#my-work a:visited{
+    color: white;
+}
+
+#my-work a:active{
+    color:white;
+}
+
+.social-media{
+    position: absolute;
+    width: 50%;
+    bottom: 2vh;
+}
+
+.social-media img:hover{
+    transform: scale(1.1);
+}
+
+/* right side */
+.image{
+    /* overflow: hidden; */
+    z-index: 1;
+}
+
+.desktop{
+    position: relative;
+    width: 90%;
+    height: 95vh;
+    margin: 2.5vh auto 0 auto;
+    /* overflow: hidden; */
+}
+
+.desktop > img{
+    position: absolute;
+    border: 5px solid rgba(255, 255, 255, 0.7);
+}
+
+.img-1{
+    width: 70%;
+    top: 2%;
+    left: -8%;
+    z-index: 1;
+    transform: rotate(-20deg)
+}
+
+.img-2{
+    width: 42%;
+    top: 3%;
+    right: 0%;
+    z-index: 3;
+    transform: rotate(7deg)
+}
+
+.img-3{
+    width: 48%;
+    top: 25%;
+    left: 15%;
+    z-index: 2;
+}
+
+.img-4{
+    width: 68%;
+    bottom: 5%;
+    left: -10%;
+    z-index: 4;
+    transform: rotate(4deg)
+}
+
+.img-5{
+    width: 45%;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    transform: rotate(-4deg)
+}
+
+.mobile{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    .wrapper{
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+
+    .size{
+        width: 100%;
+    }
+
+    #name{
+        padding: 3rem 0 0 0;
+    }
+
+    .social-media{
+        width: 100%;
+    }
+
+    .image{
+        height: 40vh;
+    }
+
+    .desktop{
+        display: none;
+    }
+    
+    .mobile{
+        position: relative;
+        display: block;
+        height: 100%;
+        /* overflow: hidden; */
+    }
+
+    .mobile > img{
+        position: absolute;
+        border: 5px solid rgba(255, 255, 255, 0.7);
+    }
+
+    .img-1{
+        width: 47%;
+        top: -10%;
+        z-index: 5;
+    }
+    .img-2{
+        width: 29%;
+        left: 30%;
+    }
+    .img-3{
+        width: 27%;
+        left: 53%;
+    }
+    .img-4{
+        width: 43%;
+        bottom: -13%;
+        z-index: 7;
+    }
+    .img-5{
+        width: 31%;
+        bottom: -3%;
+        right: -3%;
+        z-index: -1;
+    }
+}
